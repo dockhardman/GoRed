@@ -1,4 +1,4 @@
-package go_red
+package main
 
 import (
 	"github.com/gin-gonic/gin"

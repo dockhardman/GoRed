@@ -1,10 +1,10 @@
-package go_red
+package main
 
 import (
 	"github.com/gin-gonic/gin"
 )
 
-func demo() {
+func main() {
 	r := gin.Default()
 
 	r.GET("/ping", func(c *gin.Context) {
