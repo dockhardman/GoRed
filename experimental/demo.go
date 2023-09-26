@@ -29,5 +29,9 @@ func main() {
 		c.AsciiJSON(http.StatusOK, data)
 	})
 
+	r.GET("/getb", GetDataB)
+	r.GET("/getc", GetDataC)
+	r.GET("/getd", GetDataD)
+
 	r.Run(":8080")
 }
