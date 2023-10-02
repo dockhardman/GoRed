@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 
+	experimental "github.com/dockhardman/GoRed/experimental"
 	"github.com/gin-gonic/gin"
 )
 
@@ -29,9 +30,9 @@ func main() {
 		c.AsciiJSON(http.StatusOK, data)
 	})
 
-	r.GET("/getb", GetDataB)
-	r.GET("/getc", GetDataC)
-	r.GET("/getd", GetDataD)
+	r.GET("/getb", experimental.GetDataB)
+	r.GET("/getc", experimental.GetDataC)
+	r.GET("/getd", experimental.GetDataD)
 
 	r.Run(":8080")
 }
