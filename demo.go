@@ -33,6 +33,7 @@ func main() {
 	r.GET("/getb", experimental.GetDataB)
 	r.GET("/getc", experimental.GetDataC)
 	r.GET("/getd", experimental.GetDataD)
+	r.GET("/testing", experimental.StartPage)
 
 	r.Run(":8080")
 }
